@@ -1,1 +1,0 @@
-# smtsn.github.io
