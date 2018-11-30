@@ -3,17 +3,48 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0,maximum-scale=1.0">
-	<link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <title>杀马特少年</title>
+<!--	旋转的LOGO-->
+	<style>
+		.toplogo{
+			width: 200px;
+			margin:auto;
+			
+			animation: rotate 4s linear infinite;
+			
+		}
+		img{
+				width: 100%;
+				display: block;
+			}
+		@keyframes rotate{
+			0%{
+				transform: rotateZ(0deg);
+			}
+			100%{
+				transform: rotateZ(-360deg);
+			}
+			
+			
+		}
+		
+	
+	
+	</style>
+	
 </head>
 
 <body style="background-color: #e3f2fd;">
+	<!--导航栏-->
+	
 	<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+		  
+        <span class="sr-only">"Toggle navigation"</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -58,15 +89,26 @@
 		
 </nav>
 	<div class="tab-content">
-		
-		<div class="tab-pane active" id="1">没有首页</div> 
+<!--		首页-->
+		<div class="tab-pane active" id="1">没有首页
+		<div class="toplogo">
+			<img src="logo/toplogo.png">
+			
+			</div>
+			
+		</div> 
+<!--		作品-->
 		<div class="tab-pane " id="2">没有作品</div> 
+		
+<!--		角色-->
 		<div class="tab-pane " id="3">没有角色</div> 
+		
+<!--		音乐-->
 		<div class="tab-pane " id="4">没有音乐</div> 
 		
 		
 		</div>
-	<script src="../lib/jquery/jquery-1.11.0.min.js"></script>
-	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/jquery/jquery-1.11.0.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
