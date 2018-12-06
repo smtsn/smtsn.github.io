@@ -6,6 +6,7 @@
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <title>杀马特少年</title>
 <!--	旋转的LOGO-->
+
 	<style>
 		.toplogo{
 			width: 250px;
@@ -13,6 +14,7 @@
 			
 			animation: rotate 15s linear infinite;
 			
+
 		}
 		img{
 				width: 100%;
@@ -28,11 +30,25 @@
 			
 			
 		}
-		
-	
+		.navbar-nav>li a{
+			
+			margin:auto 3em;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 1.1em;
+			
+		}
+		@media(max-width:1000px){
+			.navbar-nav>li a{
+				margin:auto 2em;
+			}
+			
+		}
+	 
 	
 	</style>
 	
+ 
 </head>
 
 <body style="background-color: #fff;">
@@ -44,13 +60,14 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		  
-        <span class="sr-only">"Toggle navigation"</span>
+        <span class="sr-only"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">物语系列</a>
     </div>
+	  <div class="container">
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -74,17 +91,13 @@
 		
 		
 		
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="没有搜索功能的搜索栏">
-        </div>
-        <button type="submit" class="btn btn-default">点击搜索也没用的搜索键</button>
-      </form>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://www.snjwsmt.tk/" target="_blank">个人网盘</a></li>
       
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
+		  </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 		
 </nav>
